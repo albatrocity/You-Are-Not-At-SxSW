@@ -1,0 +1,23 @@
+{
+  "name": "BigKCTwitterStream",
+  "version": "1.0.0",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.1.9"
+  },
+  "dependencies": {
+    "express": "v3.0.1",
+    "coffee-script": "v1.2.0",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*",
+    "connect-assets": "v2.2.1",
+    "socket.io": "v0.9.13",
+    "ntwitter": "v0.5.0",
+    "moment": "*",
+    "twitter-text": "*"
+  },
+  "scripts": {
+    "start": "twitter.coffee"
+  }
+}
