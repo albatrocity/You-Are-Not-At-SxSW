@@ -14,7 +14,6 @@ $ ->
       $tweet_list.find("li:last").addClass('removing').remove()
     template = "<li class='hidden'><h5>#{tweet.user}</h5><p>#{tweet.content}</p></li>"
     dom_tweet = $(template).prependTo($tweet_list)
-    # dom_tweet.animate({'opacity', 0}, 10).removeClass 'hidden'
     if tweet.images.length > 0
       for image in tweet.images
         dom_image = $("<img class='hidden' src='#{image}' />").appendTo(dom_tweet)
