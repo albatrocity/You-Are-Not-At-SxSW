@@ -13,17 +13,31 @@
     opacity 1
     transform scale(1)
     padding .4em
+    line-height 1.5em
     list-style none
     margin 2em auto
-  *.hidden
+  *.hidey
+    padding 0
+    margin 0
+    line-height 0
     transition all .8s
     transform scale(1.05)
     opacity 0
+    height 0
+    overflow hidden
   img
     display block
     transition all .3s
     transform scale(1)
     margin 1em auto
+    &.hidey
+      height: 0
+      margin: 0 auto
 #spinner
   position relative
+  opacity 1
   top 100px
+  &.hidey
+    transition all 1s
+    transform scale(1.5)
+    opacity 0
