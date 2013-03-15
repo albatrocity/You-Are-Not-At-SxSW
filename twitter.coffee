@@ -7,7 +7,7 @@ path    = require 'path'
 io      = require 'socket.io'
 twexter = require('twitter-text')
 assets  = require 'connect-assets'
-port    = 3000
+port    = process.env.PORT || 3000
 
 app     = express()
 server  = http.createServer(app)
